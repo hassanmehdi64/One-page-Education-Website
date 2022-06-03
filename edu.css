@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(edu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h2{
+    width: 100px;
+    cursor: pointer;
+    color: #fff;
+    padding-right: 3px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+  position: relative;
+
+}
+  
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 3px;
+}
+.navbar ul li::after{
+    content:"";
+    height: 3px;
+    width:0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+   bottom: -8px;
+   transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50);
+    text-align: center;
+    color: #fff;
+    padding-top: 5px;
+}
+
+.content h1{
+    font-size: 60px;
+    margin-top:0px;
+}
+
+content p{
+    margin: 20px auto;
+    font-weight: 80;
+    line-height: 25px;
+}
+button{
+    width: 180px;
+    padding: 14px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 23px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height:0;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
